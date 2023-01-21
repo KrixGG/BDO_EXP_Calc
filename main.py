@@ -26,7 +26,6 @@ def get_numbers_from_screen_section(x1, y1, x2, y2):
     text = pytesseract.image_to_string(thresh, lang='eng', config='--psm 11')
     return text
 
-
 def check_screen_section(x1, y1, x2, y2):
     # Get the current numbers in the screen section
     current_numbers = get_numbers_from_screen_section(x1, y1, x2, y2)
